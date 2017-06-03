@@ -5,7 +5,7 @@ function Connect()
 {
  $dbhost = "localhost";
  $dbuser = "root";
- $dbpass = "mamadou";
+ $dbpass = "";
  $dbname = "bloodbank";
 
  // Create connection
@@ -13,5 +13,5 @@ function Connect()
 
  return $conn;
 }
- 
+
 ?>
