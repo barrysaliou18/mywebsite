@@ -1,0 +1,85 @@
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+body {
+	font-family:red;
+	}
+button {
+    background-color: #4CAF50;
+    color: grey;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family:verdana;
+    font-size:15px;
+}
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:#00CDCD;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 10px 0 12px 0;
+    height:43%;
+}
+img.avatar {
+    width: 35%;
+    height: 120%;
+    border-radius: 40%;
+}
+.container {
+    padding: 16px 350px;
+    width: 44%;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+<form action="connectivity2.php" method="POST" >
+  <div class="imgcontainer">
+  </center><img src="http://egblood.info/assets/img/03ce538.png" alt="Avatar" class="avatar">
+  </center>
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" value="submit" name="submit" >Login</button>
+    <input type="checkbox" checked="checked">Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn"><a href='home.html'>Cancel</a></button>
+  </div>
+</form>
+
+</body>
+</html>
