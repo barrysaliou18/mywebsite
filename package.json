@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "mywebsite",
+  "description": "Personal Website",
   "version": "1.0.0",
-  "author": "Danny Nguyen <.com>",
+  "author": "Mamadou Barry <.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chrysippean/v4"
+    "url": "https://github.com/barrysaliou18/liousa92.github.io"
   },
   "keywords": [
     "gatsby"
