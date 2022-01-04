@@ -4,7 +4,7 @@ module.exports = {
     'Mamadou Barry is a software engineer based in Seattle, WA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
   siteKeywords:
     'Mamadou Barry, Mamadou, Barry, barrysaliou18, software engineer, front-end engineer, web developer, javascript, Python',
-  siteUrl: 'https://brittanychiang.com',
+  siteUrl: 'https://mamadoubarry.com',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'linkedin.com/in/mamadou-barry-59a5b111a',
+      url: 'https://www.linkedin.com/in/mamadou-barry-59a5b111a/',
     },
     {
       name: 'Codepen',
