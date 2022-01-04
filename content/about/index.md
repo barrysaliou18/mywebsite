@@ -2,16 +2,17 @@
 title: 'About Me'
 avatar: './me.jpg'
 skills:
-  - JavaScript (ES6+)
-  - HTML & (S)CSS
+  - JavaScript
+  - HTML & CSS
   - React
   - Python
   - Node.js
   - C#
   - .Net
+  - Kubernetes
 ---
 
-Hello! I'm Mamadou, a software engineer based in Seattle, WA.
+Hello! I'm Mamadou, a Software Engineer based in Seattle, WA.
 
 I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
 
