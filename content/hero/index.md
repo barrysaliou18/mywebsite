@@ -1,7 +1,7 @@
 ---
 title: 'Hi, my name is'
 name: 'Mamadou Barry'
-subtitle: 'I am a software engineer.'
+subtitle: 'I am a Software Engineer.'
 buttonText: 'Get In Touch'
 ---
 
