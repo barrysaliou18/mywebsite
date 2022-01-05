@@ -60,12 +60,20 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Mamadou Barry.</h2>;
+<<<<<<< HEAD
   const three = <h3 className="big-heading">I build web applications and different software products.</h3>;
+=======
+  const three = <h3 className="big-heading">I build and maintain applications.</h3>;
+>>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
   const four = (
     <>
       <p>
         I’m a software engineer specializing in building (and occasionally designing) exceptional
+<<<<<<< HEAD
         digital experiences. Currently, I’m focused on developing accesible applications
+=======
+        digital experiences. Currently, I’m focused on building and maintening CI/CD pipelines and Kubernetes Clusters.
+>>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
         at{' '}
         <a href="https://infosys.com/" target="_blank" rel="noreferrer">
           Infosys
