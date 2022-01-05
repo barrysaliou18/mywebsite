@@ -1,33 +1,10 @@
 module.exports = {
-<<<<<<< HEAD
   email: 'barrysaliou18@gmail.com',
 
-=======
-  email: 'barrysaliou18@gmail.com'
->>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
   socialMedia: [
-   {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/mamadou-barry-59a5b111a/',
-    },
     {
-<<<<<<< HEAD
-=======
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/mamadou-barry-59a5b111a/',
-    },
-    {
->>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
       name: 'GitHub',
-      url: 'https://github.com/barrysaliou18',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/barrysaliou18',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://github.com/barrysaliou18@gmail.com',
     },
     {
       name: 'Instagram',
@@ -36,6 +13,14 @@ module.exports = {
     {
       name: 'Twitter',
       url: 'https://twitter.com/barrysaliou18',
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/mamadou-barry-59a5b111a/',
+    },
+    {
+      name: 'Codepen',
+      url: 'https://codepen.io/barrysaliou18',
     },
   ],
 
