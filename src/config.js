@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Mamadou Barry | Software Engineer',
   siteDescription:
-    'Mamadou Barry is a software engineer based in Seattle, WA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
+    'Mamadou Barry is a Software Engineer based in Seattle, WA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
   siteKeywords:
     'Mamadou Barry, Mamadou, Barry, barrysaliou18, software engineer, front-end engineer, web developer, javascript, Python',
   siteUrl: 'https://mamadoubarry.com',
