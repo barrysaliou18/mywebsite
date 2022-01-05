@@ -1,5 +1,5 @@
 ---
-date: '2022-01-03'
+date: '2022-01-04'
 title: 'Junior Software Developer'
 company: 'Terra Staffing Group'
 location: 'Seattle, WA'

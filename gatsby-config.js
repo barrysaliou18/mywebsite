@@ -2,13 +2,17 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: config.siteTitle,
-    siteUrl: config.siteUrl,
-    description: config.siteDescription,
+    title: 'Mamadou Barry',
+    description:
+      'Mamadou Barry is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+    siteUrl: 'https://mamadoubarry.com', // No trailing slash allowed!
+    image: '/og.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@barrysaliou18',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
@@ -16,16 +20,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'MamadouBarry',
+        short_name: 'MamadouBarry',
         start_url: '/',
-        background_color: config.colors.darkNavy,
+        background_color: config.colors.Burgandy,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -36,15 +47,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/posts`,
         name: `posts`,
+        path: `${__dirname}/content/posts`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/projects`,
         name: `projects`,
+        path: `${__dirname}/content/projects`,
       },
     },
     {
@@ -141,7 +152,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsID,
+        trackingId: 'UA-45666519-2',
       },
     },
   ],

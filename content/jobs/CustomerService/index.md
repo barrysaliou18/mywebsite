@@ -1,5 +1,5 @@
 ---
-date: '2021-01-03'
+date: '2022-01-04'
 title: 'Customer Service Representative'
 company: 'Highline College Bookstore'
 location: 'Des Moines, WA'

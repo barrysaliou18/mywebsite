@@ -1,5 +1,5 @@
 ---
-date: '2018-01-04'
+date: '2022-01-04'
 title: 'Platoon Sergeant'
 company: 'United States Army Reserve'
 location: 'Fort Lewis, WA'
