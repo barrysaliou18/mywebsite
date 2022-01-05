@@ -1,26 +1,26 @@
 module.exports = {
-  email: 'barrysaliou18@gmail.com',
+  email: 'brittany.chiang@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/barrysaliou18@gmail.com',
+      url: 'https://github.com/bchiang7',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/barrysaliou18',
+      url: 'https://www.instagram.com/bchiang7',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/barrysaliou18',
+      url: 'https://twitter.com/bchiang7',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/mamadou-barry-59a5b111a/',
+      url: 'https://www.linkedin.com/in/bchiang7',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/barrysaliou18',
+      url: 'https://codepen.io/bchiang7',
     },
   ],
 
