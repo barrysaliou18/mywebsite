@@ -126,7 +126,12 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
+<<<<<<< HEAD
+  const skills = ['JavaScript', 'Python','C#', '.Net', 'Linux', 'Ansible', 
+  'Terraform', 'CI/CD Pipeline', 'Kubernetes','React', 'Node.js';
+=======
   const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+>>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,30 +141,33 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+<<<<<<< HEAD
+              Hello! My name is Mamadou, and I enjoy creating applications. My
+              interest in web development and coding started back in 2011.
+=======
+              Hello! My name is Mamadou and I enjoy creating web applications and building programs. My
+              interest in web development and applications started back in 2011 when I decided to build a webpage with HTLM &amp CSS.
+>>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
             </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
+<<<<<<< HEAD
+              <a href="https://infosys.com/">a software company</a>,{' '}
+              <a href="https://www.usar.army.mil/">a military branch</a>,{' '}
+              <a href="https://www.terrastaffinggroup.com/">a hiring agency</a>, and{' '}
+              <a href="https://highlinebookstore.com/home">shopping store</a>. My
+              main focus these days is building and maintaining applications 
+              at <a href="https://infosys.com/">Infosys</a> for a variety of
+=======
               <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
               <a href="https://starry.com/">a start-up</a>,{' '}
               <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
               <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
               main focus these days is building accessible, inclusive products and digital
               experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
+>>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
               clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
