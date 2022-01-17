@@ -2,28 +2,24 @@
 title: 'About Me'
 avatar: './me.jpg'
 skills:
-  - JavaScript (ES6+)
+  - JavaScript
   - HTML & CSS
   - React
   - Python
+  - Node.js
   - C#
   - .Net
-  - Node.js
-  - JQUery
-  - Docker
   - Kubernetes
-  - CI/CD Pipelines
   - Linux
-  - Ansible
   - Terraform
-
+  - Ansible
+  - CI/CD
 ---
 
-I'm a Software based in Seattle, WA specializing in building exceptional websites(Full Stack) and applications.
+Hello! I'm Mamadou, a Software Engineer based in Seattle, WA.
 
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide joy and entertainment to customers.
+I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
 
-Shortly after graduating from the [University of Washington](https://www.washington.edu/), I went to deployment in Iraq where I provided my skills as a Petroleum Supply Specialist by working with different types of personal from different countries. When i got back from deployment, I joined [Infosys](https://www.infosys.com) where
-work on a wide variety of interesting and meaningful projects on a daily basis.
+Shortly after graduating from the [University of Washington](https://www.washington.edu/), I deployed to Iraq for a year. After coming back from deployment, I joined the engineering team at [Infosys](https://www.infosys.com/) where I work on a wide varieties of interesting and meaningful projects on a daily basis.
 
 Here are a few technologies I've been working with recently:

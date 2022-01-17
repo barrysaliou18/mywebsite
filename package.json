@@ -1,8 +1,8 @@
 {
   "name": "mywebsite",
-  "description": "Personal Website V2",
+  "description": "Personal Website",
   "version": "1.0.0",
-  "author": "Mamadou Barry <barrysaliou18@gmail.com>",
+  "author": "Mamadou Barry <.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/barrysaliou18/mywebsite"
@@ -49,7 +49,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.1.35",
     "gatsby-remark-prismjs": "^3.3.25",
-    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.39",
     "gatsby-transformer-sharp": "^2.3.7",
     "lodash": "^4.17.15",
