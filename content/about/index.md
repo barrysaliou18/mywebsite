@@ -12,9 +12,11 @@ skills:
   - JQUery
   - Docker
   - Kubernetes
+  - CI/CD Pipelines
   - Linux
   - Ansible
   - Terraform
+
 ---
 
 I'm a Software based in Seattle, WA specializing in building exceptional websites(Full Stack) and applications.
