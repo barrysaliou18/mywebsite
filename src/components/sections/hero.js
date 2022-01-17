@@ -1,108 +1,110 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { email } from '@config';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
-// import { email } from '@config';
+import { theme, mixins, media, Section } from '@styles';
+const { colors, fontSizes, fonts, navDelay, loaderDelay } = theme;
 
-const StyledHeroSection = styled.section`
-  ${({ theme }) => theme.mixins.flexCenter};
+const StyledContainer = styled(Section)`
+  ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0;
-
-  @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 10vh;
-  }
-
-  h1 {
-    margin: 0 0 30px 4px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    font-weight: 400;
-
-    @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
-    }
-  }
-
-  h3 {
-    margin-top: 10px;
-    color: var(--slate);
-    line-height: 0.9;
-  }
-
-  p {
-    margin: 20px 0 0;
-    max-width: 540px;
-  }
-
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+  ${media.tablet`padding-top: 150px;`};
+  div {
+    width: 100%;
   }
 `;
+const StyledOverline = styled.h1`
+  color: ${colors.green};
+  margin: 0 0 20px 3px;
+  font-size: ${fontSizes.md};
+  font-family: ${fonts.SFMono};
+  font-weight: normal;
+  ${media.desktop`font-size: ${fontSizes.sm};`};
+  ${media.tablet`font-size: ${fontSizes.smish};`};
+`;
+const StyledTitle = styled.h2`
+  font-size: 80px;
+  line-height: 1.1;
+  margin: 0;
+  ${media.desktop`font-size: 70px;`};
+  ${media.tablet`font-size: 60px;`};
+  ${media.phablet`font-size: 50px;`};
+  ${media.phone`font-size: 40px;`};
+`;
+const StyledSubtitle = styled.h3`
+  font-size: 80px;
+  line-height: 1.1;
+  color: ${colors.slate};
+  ${media.desktop`font-size: 70px;`};
+  ${media.tablet`font-size: 60px;`};
+  ${media.phablet`font-size: 50px;`};
+  ${media.phone`font-size: 40px;`};
+`;
+const StyledDescription = styled.div`
+  margin-top: 25px;
+  width: 50%;
+  max-width: 500px;
+  a {
+    ${mixins.inlineLink};
+  }
+`;
+const StyledEmailLink = styled.a`
+  ${mixins.bigButton};
+  margin-top: 50px;
+`;
 
-const Hero = () => {
+const Hero = ({ data }) => {
   const [isMounted, setIsMounted] = useState(false);
-  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Mamadou Barry.</h2>;
-<<<<<<< HEAD
-  const three = <h3 className="big-heading">I build web applications and different software products.</h3>;
-=======
-  const three = <h3 className="big-heading">I build and maintain applications.</h3>;
->>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
-  const four = (
-    <>
-      <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-<<<<<<< HEAD
-        digital experiences. Currently, I’m focused on developing accesible applications
-=======
-        digital experiences. Currently, I’m focused on building and maintening CI/CD pipelines and Kubernetes Clusters.
->>>>>>> 81178cc8201612d63e086e270e4b329ab36181fe
-        at{' '}
-        <a href="https://infosys.com/" target="_blank" rel="noreferrer">
-          Infosys
-        </a>
-        .
-      </p>
-    </>
+  const { frontmatter, html } = data[0].node;
+
+  const one = () => (
+    <StyledOverline style={{ transitionDelay: '100ms' }}>{frontmatter.title}</StyledOverline>
+  );
+  const two = () => (
+    <StyledTitle style={{ transitionDelay: '200ms' }}>{frontmatter.name}.</StyledTitle>
+  );
+  const three = () => (
+    <StyledSubtitle style={{ transitionDelay: '300ms' }}>{frontmatter.subtitle}</StyledSubtitle>
+  );
+  const four = () => (
+    <StyledDescription
+      style={{ transitionDelay: '400ms' }}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
+  const five = () => (
+    <div style={{ transitionDelay: '500ms' }}>
+      <StyledEmailLink href={`mailto:${email}`}>Get In Touch</StyledEmailLink>
+    </div>
   );
 
+  const items = [one, two, three, four, five];
+
   return (
-    <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
+    <StyledContainer>
+      <TransitionGroup component={null}>
+        {isMounted &&
+          items.map((item, i) => (
+            <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+              {item}
+            </CSSTransition>
           ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      )}
-    </StyledHeroSection>
+      </TransitionGroup>
+    </StyledContainer>
   );
+};
+
+Hero.propTypes = {
+  data: PropTypes.array.isRequired,
 };
 
 export default Hero;
